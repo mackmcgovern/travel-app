@@ -1,0 +1,261 @@
+// $accent-color: #312f71;
+$accent-color: #2c4f5c;
+$text-color-light: #f9fdff;
+$btn-color: #ffffffb3;
+
+// CSS reset
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("../media/airplane.jpg");
+  background-size: fill;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+}
+
+h1 {
+  font-size: 36px;
+  color: $accent-color;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-top: 20px;
+  color: $text-color-light;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #367b95;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  font-weight: 300;
+}
+
+// page layout
+.topSection {
+  padding: 5px 20px;
+  margin-bottom: 25px;
+  background: #00000014;
+}
+
+.container {
+  margin: 10px 35px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-columns: 1fr 2fr;
+  background: rgba(41, 41, 41, 0.741);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+.overlay {
+  background: rgba(41, 41, 41, 0.741);
+}
+
+#locationErr p {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: $accent-color;
+  color: $text-color-light;
+}
+
+.trip-info {
+  align-self: center;
+  margin-top: 20px;
+  padding: 15px;
+  color: $text-color-light;
+}
+
+.tripInfo p {
+  color: $text-color-light;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  max-height: 80vh;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 2px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 1.1rem;
+  color: $accent-color;
+  font-weight: 100;
+}
+
+input {
+  display: block;
+  height: 30px;
+  width: 200px;
+  background: #00000040;
+  color: $text-color-light;
+  border: solid 1px #000;
+  border-radius: 3px;
+  padding-left: 5px;
+  margin: 2px;
+  transition: background 0.025s ease-in-out;
+}
+
+input:hover {
+  background: #00000091;
+}
+
+button {
+  width: 150px;
+  height: 33px;
+  // margin-top: 23px;
+  margin: 23px 3px 0 3px;
+  background: $btn-color;
+  color: $accent-color;
+  box-shadow: 1px 2px 3px #444;
+  cursor: pointer;
+  border: solid 1px #000;
+  border-radius: 4px;
+  transition: background 0.025s ease-in-out;
+}
+button:hover {
+  background: #ffffff46;
+}
+
+button:disabled {
+  background: #ffffff46;
+  // background: $accent-color;
+  opacity: 0.66;
+  pointer-events: none;
+  // color: $text-color-light;
+}
+
+// toggle elements display on and off
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "Lato", sans-serif;
+    background-image: url("../media/airplane.jpg");
+    background-size: fill;
+    background-position: 53% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .container {
+    margin: 10px 20px;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .trip-info {
+    margin-top: 0;
+  }
+
+  #destination-pic {
+    grid-row: 1;
+  }
+
+  .btn-holder {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 10px 15px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+
+  .btn-holder {
+    justify-content: space-around;
+  }
+}

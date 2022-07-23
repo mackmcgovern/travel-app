@@ -3,10 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
+||||||| parent of c75976d... initial commit
+    "test": "jest --coverage",
+    "start": "node src/server/index.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
+=======
+    "test": "jest",
+    "start": "nodemon src/server/index.js",
+    "build": "webpack --config webpack.prod.js"
+>>>>>>> c75976d... initial commit
   },
   "keywords": [],
   "author": "",
