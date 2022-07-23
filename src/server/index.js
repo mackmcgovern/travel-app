@@ -1,7 +1,8 @@
 const dotenv = require('dotenv');
 dotenv.config();
 // call the config function
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 // const path = require("path");
 const express = require("express");
 const app = express()
