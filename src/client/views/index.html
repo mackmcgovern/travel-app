@@ -1,23 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
-    </head>
-||||||| parent of c75976d... initial commit
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
-
-    </head>
-=======
 <html>
 
 <head>
@@ -26,30 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
->>>>>>> c75976d... initial commit
 
-<<<<<<< HEAD
-    <body>
-
-        <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-||||||| parent of c75976d... initial commit
-    <body>
-
-        <header>
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
-            <div class="nav">
-                <ul class="nav-ul">
-                    <li><a href="#" class="nav-link">About</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-=======
 <body>
         <div class="topSection">
                 <h1>Travel App</h1>
@@ -67,7 +25,6 @@
                     <input id="departure" type="date">
                 </div>
                 <button id="generate" type="submit">Add Trip</button>
->>>>>>> c75976d... initial commit
             </div>
         </div>
         <div id="locationErr"></div>
@@ -77,69 +34,6 @@
                 <div id="dates"></div>
                 <div id="weather"></div>
 
-<<<<<<< HEAD
-        <main>
-            <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
-                </form>
-            </section>
-
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
-        </main>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-
-    </body>
-</html>
-||||||| parent of c75976d... initial commit
-        <main>
-            <section>
-                <h2>Evaluate an Article with Natural Language Processing</h2>
-                <form class="" onsubmit="return Client.handleSubmit(event);">
-                    <input id="name" type="text" name="input" value=""  placeholder="Enter Article URL Here">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event);" onsubmit="return Client.handleSubmit(event);">
-                </form>
-            </section>
-
-            <section>
-                <h3 class="form-res">Form Results:</h3>
-                <div id="results">
-                    <div id="sentences"></div>
-                    <ul id="api-data">
-                        <li id="agreement"></li>
-                        <li id="subjectivity"></li>
-                        <li id="confidence"></li>
-                        <li id="irony"></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-
-        <script>
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-                // Use the window load event to keep the page load performant
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js')
-                    .then(() => console.log('Service worker is registered'))
-                    .catch(() => console.error('Service worker registration failed'));
-                });
-            }
-           </script>
-    </body>
-</html>
-=======
                 <div class="btn-holder">
                     <button class="btn btn-active hidden" id="save">Save Trip</button>
                     <button class="btn hidden" id="delete">Delete Trip</button>
@@ -161,4 +55,3 @@
 </body>
 
 </html>
->>>>>>> c75976d... initial commit

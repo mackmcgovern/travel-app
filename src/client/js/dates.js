@@ -9,9 +9,6 @@ const dayCount = (date1, date2) => {
 const formatDate = (date) => {
     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const setDate = new Date(date);
-    // let day = date.getUTCDate();
-    // let month = date.getUTCMonth() + 1;
-    // let year = date.getUTCFullYear();
     const formattedDate = `${month[setDate.getUTCMonth()]} ${setDate.getUTCDate()}, ${setDate.getUTCFullYear()}`;
     return(formattedDate);
 }
